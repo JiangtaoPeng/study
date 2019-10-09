@@ -14,10 +14,14 @@
 :insert({host=test_host})
 :select({id=svc.id}) (primary key)
 :select_by_name("name_str")
-:update({id=svc.id}, {change_table}) ()
-:update_by_name
+:update({id=svc.id}, {change_table}) (primary key)
+:update_by_name("svc_name", {change_table})
+:delete()
+:delete_by_name
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQyNTAyNDksLTE1NTc5ODAzOTUsLT
+eyJoaXN0b3J5IjpbLTExNTM4MjkyNTksLTE1NTc5ODAzOTUsLT
 E0NDgzNDExNTQsLTkzNjA1NTc0Myw3MzA5OTgxMTZdfQ==
 -->
