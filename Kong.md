@@ -1,7 +1,9 @@
+# Kong
+
+[https://docs.konghq.com](https://docs.konghq.com/)
 
 
-
-> Written with [StackEdit](https://stackedit.io/).
+### 如何限制访问Admin API和Kong Pro x
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzMwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbLTEzODYwMDQ4MzYsNzMwOTk4MTE2XX0=
 -->
