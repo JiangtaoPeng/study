@@ -18,10 +18,10 @@
 :update_by_name("svc_name", {change_table})
 :delete()
 :delete_by_name
-
+:truncate()
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTM4MjkyNTksLTE1NTc5ODAzOTUsLT
-E0NDgzNDExNTQsLTkzNjA1NTc0Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbMTc4ODg1NDI2MiwtMTU1Nzk4MDM5NSwtMT
+Q0ODM0MTE1NCwtOTM2MDU1NzQzLDczMDk5ODExNl19
 -->
