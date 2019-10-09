@@ -10,7 +10,14 @@
 - 限制admin_listen到localhost，配置route转发到admin api，然后为该路径添加plugin限制访问
 - 使用kong enterprise
 
+### kong.db.services
+:insert({host=test_host})
+:select({id=svc.id}) (primary key)
+:select_by_name("name_str")
+:update({id=svc.id}, {change_table}) ()
+:update_by_name
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTc5ODAzOTUsLTE0NDgzNDExNTQsLT
-kzNjA1NTc0Myw3MzA5OTgxMTZdfQ==
+eyJoaXN0b3J5IjpbLTEyMjQyNTAyNDksLTE1NTc5ODAzOTUsLT
+E0NDgzNDExNTQsLTkzNjA1NTc0Myw3MzA5OTgxMTZdfQ==
 -->
