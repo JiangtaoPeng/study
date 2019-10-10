@@ -2,6 +2,7 @@
 
 [https://docs.konghq.com](https://docs.konghq.com/)
 [kong proxy docs/](https://git.102no.com/2019/06/12/kong-proxy-docs/)
+https://git.102no.com/2019/06/12/kong-proxy-docs/
 
 ### 如何限制访问Admin API和Kong Proxy
 [Secure Admin API](https://docs.konghq.com/1.3.x/secure-admin-api/)
@@ -22,7 +23,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDIzNTYzMTYsMTc4ODg1NDI2MiwtMT
-U1Nzk4MDM5NSwtMTQ0ODM0MTE1NCwtOTM2MDU1NzQzLDczMDk5
-ODExNl19
+eyJoaXN0b3J5IjpbOTE1OTM2MjE0LC0xNjQyMzU2MzE2LDE3OD
+g4NTQyNjIsLTE1NTc5ODAzOTUsLTE0NDgzNDExNTQsLTkzNjA1
+NTc0Myw3MzA5OTgxMTZdfQ==
 -->
