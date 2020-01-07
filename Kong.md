@@ -2,7 +2,7 @@
 对复杂的业务系统统一做逻辑拆分，保持逻辑上的独立
 
 # Kong
-
+[教程](https://www.jianshu.com/p/a68e45bcadb6)
 [https://docs.konghq.com](https://docs.konghq.com/)
 [kong proxy docs/](https://git.102no.com/2019/06/12/kong-proxy-docs/)
 https://git.102no.com/2019/06/12/kong-proxy-docs/
@@ -26,8 +26,8 @@ https://git.102no.com/2019/06/12/kong-proxy-docs/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5NTI1OTkwLC0xNTY1NjA0NzEsOTE1OT
-M2MjE0LC0xNjQyMzU2MzE2LDE3ODg4NTQyNjIsLTE1NTc5ODAz
-OTUsLTE0NDgzNDExNTQsLTkzNjA1NTc0Myw3MzA5OTgxMTZdfQ
-==
+eyJoaXN0b3J5IjpbNzE5OTA5NTY1LDQ2OTUyNTk5MCwtMTU2NT
+YwNDcxLDkxNTkzNjIxNCwtMTY0MjM1NjMxNiwxNzg4ODU0MjYy
+LC0xNTU3OTgwMzk1LC0xNDQ4MzQxMTU0LC05MzYwNTU3NDMsNz
+MwOTk4MTE2XX0=
 -->
