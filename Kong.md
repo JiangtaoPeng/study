@@ -3,6 +3,7 @@
 
 # Kong
 [教程](https://www.jianshu.com/p/a68e45bcadb6)
+[教程2](https://segmentfault.com/a/1190000019857235)
 [https://docs.konghq.com](https://docs.konghq.com/)
 [kong proxy docs/](https://git.102no.com/2019/06/12/kong-proxy-docs/)
 https://git.102no.com/2019/06/12/kong-proxy-docs/
@@ -26,8 +27,8 @@ https://git.102no.com/2019/06/12/kong-proxy-docs/
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5OTA5NTY1LDQ2OTUyNTk5MCwtMTU2NT
-YwNDcxLDkxNTkzNjIxNCwtMTY0MjM1NjMxNiwxNzg4ODU0MjYy
-LC0xNTU3OTgwMzk1LC0xNDQ4MzQxMTU0LC05MzYwNTU3NDMsNz
-MwOTk4MTE2XX0=
+eyJoaXN0b3J5IjpbMTAxOTQzMTAzMSw3MTk5MDk1NjUsNDY5NT
+I1OTkwLC0xNTY1NjA0NzEsOTE1OTM2MjE0LC0xNjQyMzU2MzE2
+LDE3ODg4NTQyNjIsLTE1NTc5ODAzOTUsLTE0NDgzNDExNTQsLT
+kzNjA1NTc0Myw3MzA5OTgxMTZdfQ==
 -->
