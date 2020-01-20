@@ -224,10 +224,10 @@ Nginx
 #### concat
 #### index
 - 指定/访问时返回index文件内容
-- 
+- 默认含有这个模块
 #### autoindex
--
-``` autoindex autoindex_exact_size autoindex_localtime autoindex_format
+- 当URL
+``` autoindex autoindex_exact_size autoindex_localtime autoindex_format```
 #### static
 - 默认是nginx框架里的，不可移除
 - ``` alias/root path;```将url映射成文件路径，以返回静态文件内容
@@ -269,6 +269,6 @@ Nginx
 
 ### log阶段
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzg2MDgwMzQsMjA1MDYzNDgxNiwxNz
-EyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbNzE1NDgzNjY5LDIwNTA2MzQ4MTYsMTcxMj
+U0MzQ5Ml19
 -->
