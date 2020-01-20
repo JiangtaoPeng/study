@@ -271,9 +271,11 @@ Nginx
 	- server_name_in_direct on | off;
 	- port_in_redirect on | off;
 
-
 ### log阶段
+#### log模块
+- 无法禁用，编译进nginx框架中了
+- 将http相关请求
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNz
-EyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMj
+A1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
 -->
