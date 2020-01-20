@@ -221,8 +221,10 @@ Nginx
 - ``` mirror uri | off;```
 - ``` mirror_request_body off | on;```
 ### content阶段
+#### concat
 #### index
-- 指定/访问时返回
+- 指定/访问时返回index文件内容
+- 
 #### autoindex
 
 #### static
@@ -266,5 +268,5 @@ Nginx
 
 ### log阶段
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjU0MzQ5Ml19
+eyJoaXN0b3J5IjpbMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
 -->
