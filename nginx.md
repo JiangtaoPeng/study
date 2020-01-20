@@ -226,7 +226,8 @@ Nginx
 - 指定/访问时返回index文件内容
 - 默认含有这个模块
 #### autoindex
-- 当URL
+- 当URL以/结尾时，尝试以html/xml/json/jsonp等格式返回root/alias指向的目录的目录结构
+- 在index之后执行，index返回结果后，这个autoindex就不起作用 
 ``` autoindex autoindex_exact_size autoindex_localtime autoindex_format```
 #### static
 - 默认是nginx框架里的，不可移除
@@ -269,6 +270,6 @@ Nginx
 
 ### log阶段
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1NDgzNjY5LDIwNTA2MzQ4MTYsMTcxMj
-U0MzQ5Ml19
+eyJoaXN0b3J5IjpbMTgwNDY2NzAxNywyMDUwNjM0ODE2LDE3MT
+I1NDM0OTJdfQ==
 -->
