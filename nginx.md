@@ -225,6 +225,7 @@ Nginx
 - 阿里提供的模块
 - 一次访问中返回多个小文件，提升多个小文件性能
 - 格式 URI??file_1,file_2,file_3...?params
+- concat/concat_delimiter/concat_types/concat_unique/concat_max_files
 #### index
 - 指定/访问时返回index文件内容
 - 默认含有这个模块
@@ -273,6 +274,6 @@ Nginx
 
 ### log阶段
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA0OTAyMDE1LDIwNTA2MzQ4MTYsMTcxMj
-U0MzQ5Ml19
+eyJoaXN0b3J5IjpbLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNz
+EyNTQzNDkyXX0=
 -->
