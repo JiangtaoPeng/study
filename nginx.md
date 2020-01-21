@@ -280,9 +280,11 @@ Nginx
 - 日志缓存 -> 超出buffer大小或者flush到达时间或者worker进程变化才会出发日志写入磁盘
 - 日志压缩 
 - ```open_log_file_cache max=N inactive min_uses valid```
-	- maxL：
+	- max：缓存内的最大文件句柄数，超出后用LRU算法淘汰
+	- inactive：文件访问完后在这段时间不会关闭
+	- min_uses：在inactive时间内s
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDE4ODIwMywxODg1NTc4NDE5LDE2Nz
-E0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAy
-MTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbLTEzNzI1MDUwMjQsMTg4NTU3ODQxOSwxNj
+cxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEw
+MjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
 -->
