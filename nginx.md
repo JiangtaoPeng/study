@@ -296,11 +296,11 @@ Nginx
 ### sub模块
 - 对响应中的字符串替换
 - 默认未编译进nginx
-- ``` sub_filter string replacement;
+- ``` sub_filter string replacement;``` sub_filter_once, sub_filter_types, sub_filter_last_modified;
 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NjM0OTgxLC04Mzg0MTc4ODUsMTg4NT
-U3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3
-MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX
-0=
+eyJoaXN0b3J5IjpbLTEwOTU1ODE4NzYsLTgzODQxNzg4NSwxOD
+g1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgz
+NzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OT
+JdfQ==
 -->
