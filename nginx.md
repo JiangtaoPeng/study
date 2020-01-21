@@ -286,16 +286,21 @@ Nginx
 	- valid：在valid时间内检测内存中日志是否存在
 
 ## 过滤模块
-- 处在log阶段之前，content阶段之后
+- 处在log阶段之前，content阶段之后，改变响应
 - preaccess -> access -> content -> header filter -> body filter -> log
 - 过滤模块的顺序：image filter -> gzip
 - copy_filter：使得sendfile零拷贝失效
 - postpone_filter：处理子请求
 - header_filter：生成响应头
 - write_filter：生成响应
+### sub模块
+- 对响应中的字符串替换
+- 默认未编译进nginx
+- ``` sub_filter string replacement;
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4MDkzMzIsLTgzODQxNzg4NSwxODg1NT
-c4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzcz
-OCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ
-==
+eyJoaXN0b3J5IjpbLTI5NjM0OTgxLC04Mzg0MTc4ODUsMTg4NT
+U3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3
+MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX
+0=
 -->
