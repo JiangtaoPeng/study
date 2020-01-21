@@ -297,9 +297,9 @@ Nginx
 - 对响应中的字符串替换
 - 默认未编译进nginx
 - ``` sub_filter string replacement;``` sub_filter_once, sub_filter_types, sub_filter_last_modified;
-- 
+- 忽略大小写
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU1ODE4NzYsLTgzODQxNzg4NSwxOD
+eyJoaXN0b3J5IjpbLTE4MjkzNzM4NTcsLTgzODQxNzg4NSwxOD
 g1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgz
 NzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OT
 JdfQ==
