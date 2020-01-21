@@ -276,7 +276,10 @@ Nginx
 - 无法禁用，编译进nginx框架中了
 - 将http相关请求的信息记录到日志
 - ```log_format/access_log```
+- 日志缓存 -> 超出
+- 日志压缩 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMT
-cxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC0xMD
+YwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcxMjU0
+MzQ5Ml19
 -->
