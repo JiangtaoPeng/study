@@ -296,11 +296,13 @@ Nginx
 ### sub模块
 - 对响应中的字符串替换
 - 默认未编译进nginx
-- ``` sub_filter string replacement;``` sub_filter_once, sub_filter_types, sub_filter_last_modified;
+- ``` sub_filter string replacement;``` sub_filter_once, sub_filter_types, sub_filter_last_modified(header加入last_modified时间);
 - 忽略大小写
+### addition模块
+- 在响应前或者响应后增加内容，并不修改xiang i
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjkzNzM4NTcsLTgzODQxNzg4NSwxOD
-g1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgz
-NzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OT
-JdfQ==
+eyJoaXN0b3J5IjpbLTE5Mjg1MzU0LC04Mzg0MTc4ODUsMTg4NT
+U3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3
+MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX
+0=
 -->
