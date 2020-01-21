@@ -289,10 +289,13 @@ Nginx
 - 处在log阶段之前，content阶段之后
 - preaccess -> access -> content -> header filter -> body filter -> log
 - 过滤模块的顺序：image filter -> gzip
-- 
+- copy_filter：使得sendfile零拷贝失效
+- postpone_filter：处理子请求
+- header_filter：生成响应头
+- write_filter：生成响应
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNDg3MjAzNCwtODM4NDE3ODg1LDE4OD
-U1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3
-NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml
-19
+eyJoaXN0b3J5IjpbNjY4MDkzMzIsLTgzODQxNzg4NSwxODg1NT
+c4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzcz
+OCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ
+==
 -->
