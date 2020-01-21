@@ -286,9 +286,9 @@ Nginx
 	- valid：在valid时间内检测内存中日志是否存在
 
 ## 过滤模块
-- 处在log阶段之前
+- 处在log阶段之前，content阶段之后
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQwNjQ1MiwxODg1NTc4NDE5LDE2Nz
-E0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAy
-MTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbNjU1Njk0MzAxLDE4ODU1Nzg0MTksMTY3MT
+Q5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3NzM4LC0xNzExMDIx
+MzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml19
 -->
