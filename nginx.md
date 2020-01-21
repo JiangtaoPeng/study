@@ -274,8 +274,9 @@ Nginx
 ### log阶段
 #### log模块
 - 无法禁用，编译进nginx框架中了
-- 将http相关请求
+- 将http相关请求的信息记录到日志
+- ```log_format/access_log```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMj
-A1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMT
+cxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
