@@ -289,8 +289,10 @@ Nginx
 - 处在log阶段之前，content阶段之后
 - preaccess -> access -> content -> header filter -> body filter -> log
 - 过滤模块的顺序：image filter -> gzip
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2Nz
-E0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAy
-MTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbLTMzNDg3MjAzNCwtODM4NDE3ODg1LDE4OD
+U1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3
+NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml
+19
 -->
