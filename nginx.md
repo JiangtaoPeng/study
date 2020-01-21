@@ -282,9 +282,9 @@ Nginx
 - ```open_log_file_cache max=N inactive min_uses valid```
 	- max：缓存内的最大文件句柄数，超出后用LRU算法淘汰
 	- inactive：文件访问完后在这段时间不会关闭
-	- min_uses：在inactive时间内s
+	- min_uses：在inactive时间内使用次数超过min_uses才会留在
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzI1MDUwMjQsMTg4NTU3ODQxOSwxNj
-cxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEw
-MjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbNTY1NzMyOTc4LDE4ODU1Nzg0MTksMTY3MT
+Q5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3NzM4LC0xNzExMDIx
+MzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml19
 -->
