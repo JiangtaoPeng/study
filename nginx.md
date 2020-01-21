@@ -275,12 +275,12 @@ Nginx
 #### log模块
 - 无法禁用，编译进nginx框架中了
 - 将http相关请求的信息记录到日志
-- ```log_format/access_log path```
+- ```log_format/access_log path format gzip flush if```
 - 日志path是可以包含变量的，所以日志可以根据变量存放在不同的文件中
 - 日志缓存 -> 超出buffer大小或者flush到达时间或者worker进程变化才会出发日志写入磁盘
 - 日志压缩 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzODc0NjQxMywxNjcxNDk0MjkzLDExMT
+eyJoaXN0b3J5IjpbMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMT
 Y4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYz
 NDgxNiwxNzEyNTQzNDkyXX0=
 -->
