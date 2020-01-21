@@ -283,8 +283,12 @@ Nginx
 	- max：缓存内的最大文件句柄数，超出后用LRU算法淘汰
 	- inactive：文件访问完后在这段时间不会关闭
 	- min_uses：在inactive时间内使用次数超过min_uses才会留在内存里
+	- valid：在valid时间内检测内存中日志是否存在
+
+## 过滤模块
+- 处在log阶段之前
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzk1NDIwMDcsMTg4NTU3ODQxOSwxNj
-cxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEw
-MjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbLTE1OTQwNjQ1MiwxODg1NTc4NDE5LDE2Nz
+E0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAy
+MTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
