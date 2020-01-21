@@ -288,8 +288,9 @@ Nginx
 ## 过滤模块
 - 处在log阶段之前，content阶段之后
 - preaccess -> access -> content -> header filter -> body filter -> log
+- 过滤模块的顺序：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzQxMTk5MzQsMTg4NTU3ODQxOSwxNj
-cxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEw
-MjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbNzM4NjE4OTcsMTg4NTU3ODQxOSwxNjcxND
+k0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEwMjEz
+MjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX0=
 -->
