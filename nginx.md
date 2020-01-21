@@ -279,8 +279,10 @@ Nginx
 - 日志path是可以包含变量的，所以日志可以根据变量存放在不同的文件中
 - 日志缓存 -> 超出buffer大小或者flush到达时间或者worker进程变化才会出发日志写入磁盘
 - 日志压缩 
+- ```open_log_file_cache max=N inactive min_uses valid```
+	- maxL：
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMT
-Y4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYz
-NDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbMTcxMDE4ODIwMywxODg1NTc4NDE5LDE2Nz
+E0OTQyOTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAy
+MTMyMywyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
