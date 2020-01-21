@@ -299,9 +299,11 @@ Nginx
 - ``` sub_filter string replacement;``` sub_filter_once, sub_filter_types, sub_filter_last_modified(header加入last_modified时间);
 - 忽略大小写
 ### addition模块
-- 在响应前或者响应后增加内容，并不修改xiang i
+- 在响应前或者响应后增加内容，并不修改响应本身，方式是通过增加子请求完成
+- 默认未编译进nginx
+- ```add_before_body/add_after_body/addition_types```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mjg1MzU0LC04Mzg0MTc4ODUsMTg4NT
+eyJoaXN0b3J5IjpbMjg4ODgwMzQ2LC04Mzg0MTc4ODUsMTg4NT
 U3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3
 MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX
 0=
