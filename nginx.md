@@ -276,10 +276,10 @@ Nginx
 - 无法禁用，编译进nginx框架中了
 - 将http相关请求的信息记录到日志
 - ```log_format/access_log```
-- 日志缓存 -> 超出buffer大小或者flush到达时间或者worker进程变化才会出发日志xie
+- 日志缓存 -> 超出buffer大小或者flush到达时间或者worker进程变化才会出发日志写入磁盘
 - 日志压缩 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzgyOTY2MDksMTY3MTQ5NDI5MywxMT
+eyJoaXN0b3J5IjpbLTE1MDAxMTgxODYsMTY3MTQ5NDI5MywxMT
 E2ODQ1MjM2LC0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2
 MzQ4MTYsMTcxMjU0MzQ5Ml19
 -->
