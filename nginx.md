@@ -310,9 +310,10 @@ Nginx
 - 使用变量的模块
 - 惰性求值：开始读取变量的时候才会求值
 	- good performance
-	- bian liang h
+	- 变量值可能时刻变化，使用的时候为当前值
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDE0MDEyMTEsLTg1MDczMzk2NiwyOD
+eyJoaXN0b3J5IjpbLTEyNzc5MTA2MjMsLTg1MDczMzk2NiwyOD
 g4ODAzNDYsLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQy
 OTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMy
 wyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
