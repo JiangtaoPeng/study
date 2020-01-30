@@ -302,9 +302,13 @@ Nginx
 - 在响应前或者响应后增加内容，并不修改响应本身，方式是通过增加子请求完成
 - 默认未编译进nginx
 - ```add_before_body/add_after_body/addition_types```
+
+## Nignx中变量的运行
+- bian liang
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg4ODgwMzQ2LC04Mzg0MTc4ODUsMTg4NT
-U3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLTEwNjA4Mzc3
-MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEyNTQzNDkyXX
-0=
+eyJoaXN0b3J5IjpbMjE0NDM0NTI0NCwyODg4ODAzNDYsLTgzOD
+QxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIz
+NiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LD
+E3MTI1NDM0OTJdfQ==
 -->
