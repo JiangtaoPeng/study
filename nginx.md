@@ -306,10 +306,10 @@ Nginx
 ## Nignx中变量的运行
 - 变量是很好的解耦工具
 ### 运行原理
-- 提供变量的模块
-- 
+- 提供变量的模块：在请求还没有来之前已经
+- 使用变量的模块
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Mjc4OTA4MywyODg4ODAzNDYsLTgzOD
+eyJoaXN0b3J5IjpbMTUwNDA5NDkwOCwyODg4ODAzNDYsLTgzOD
 QxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIz
 NiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LD
 E3MTI1NDM0OTJdfQ==
