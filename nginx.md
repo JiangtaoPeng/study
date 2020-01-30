@@ -308,9 +308,12 @@ Nginx
 ### 运行原理
 - 提供变量的模块：在请求还没有来之前已经在preconfiguration中定义了新的变量及解析出变量的方法
 - 使用变量的模块
+- 惰性求值：开始读取变量的时候才会求值
+	- good performance
+	- bian liang h
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzOD
-QxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIz
-NiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LD
-E3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbLTIwMDE0MDEyMTEsLTg1MDczMzk2NiwyOD
+g4ODAzNDYsLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQy
+OTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMy
+wyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
