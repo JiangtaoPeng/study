@@ -304,10 +304,12 @@ Nginx
 - ```add_before_body/add_after_body/addition_types```
 
 ## Nignx中变量的运行
-- bian liang
-
+- 变量是很好的解耦工具
+### 运行原理
+- 提供变量的模块
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDM0NTI0NCwyODg4ODAzNDYsLTgzOD
+eyJoaXN0b3J5IjpbMTU2Mjc4OTA4MywyODg4ODAzNDYsLTgzOD
 QxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIz
 NiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LD
 E3MTI1NDM0OTJdfQ==
