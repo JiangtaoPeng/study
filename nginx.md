@@ -311,10 +311,113 @@ Nginx
 - 惰性求值：开始读取变量的时候才会求值
 	- good performance
 	- 变量值可能时刻变化，使用的时候为当前值
-- 
+### nginx框架中提供的变量
+- 例如：bytes_sent, body_bytes_sent
+- HTTP请求相关的变量
+	- 例如访问 localhost:9000?a=1&b=22
+	- arg_参数名: arg_a=1, arg_b=22
+	- query_string: a=1&b=22
+	- args: a=1&b=22
+	- is_args: 有参数则返回？否则返回空字符串
+	- content_length: 请求中标识包体长度Content-Length头部的值
+	- content_type: Content-Type头部的值
+	- uri：请求的URI，不同于URL，不包括 ？后的参数
+	- document_uri: 同uri完全一样
+	- request_uri: 请求的URL，包含URI及完整的参数
+	- scheme：协议名 http/https
+	- request_method: 请求方法 GET或者POST
+	- request_length：请求内容的 大小，包括请求行/头部/包体
+	- remote_user：由HTTP Basic Authentication协议传入的用户名
+	- request_body_file: 临时存放请求包体的文件
+	- request_body: 请求中的包体，这个变量当且仅当使用反向代理，且设定用内存暂存包体时才有效
+	- request: 原始url，含有方法和协议版本，例如GET /?a=1&b=22 HTTP/1.1
+	- host：请求行中获取原始头部 -> Host头部替换请求行 -> 如果两者都取不到，则使用匹配上的server_name
+	- http_头部名字: 返回 一个具体请求头部的值
+		- 特殊： http_host,http_user_agent,http_referer,http_via,http_x_forwarded_for,http_cookie 
+- TCP连接相关的变量
+	- binary_remote_addr: 客户端地址的整型格式，IPv4/IPv6
+	- remote_addr
+	- remote_port
+	- connection: 递增的连接序号
+	- connection_requests：当前连接上执行过的请求数，对keep-alive有意义
+	- proxy_protocol_addr：使用proxy_protocol协议则返回协议中的地址，否则返回空
+	- procy_protocol_port
+	- server_addr
+	- server_port
+	- TCP_INFO：tcp内核层参数，
+	- server_protocol
+- nginx处理请求过程中产生的变量
+	- request_time: 单位是s, 精确到ms
+	- server_name
+	- https: 是否开启了TLS/SSL，则返回on/空
+	- request_completion: 请求是否处理完成，返回 OK/空
+	- request_id：随机生成的16字节id
+	- request_filename: 待访问文件的完整路径
+	- document_root：URI和root/alias规则生成的文件夹路径
+	- realpath_root：将document_root中的软连接换成真实路径
+	- limit_rate
+- 发送HTTP响应时相关的变量
+	- body_bytes_sent
+	- bytes_sent
+	- status
+	- sent_trailer_名字：把响应结尾内容里值返回
+	- sent_http_头部名字：响应中某个具体头部的值
+		- 特殊: sent_http_content_type/content_length/location/last_modified/connection/keep_alive/transfer_encoding/cache_control/link
+- nginx系统变量：不随请求发生变化
+	- time_local
+	- time_iso8601
+	- nginx_version
+	- pid: worker进程的pid
+	- pipe：使用了管道则返回p/.
+	- hostname: 服务器主机名，与hostname命令输出一致
+	- msec：1970年1月1日到现在的时间，单位为s，精确到ms
+
+## Referer模块
+- referer防盗链，http请求头部会通过referer头部，将该网站当前页面的url带上，告诉服务器本次请求是由这个页面发起的
+- 思路：通过referer模块，用valid_referer变量根据配置判断referer头部是否合法
+- 目的：拒绝非正常的网站访问我们站点的资源
+- 默认编译进nginx
+- 指令
+	- valid_referers none | blocked | server_names |  string ...;
+		- none允许不带referer
+		- block允许referer为空
+		- server_names：若referer中站点域名与server_name中本机域名某个匹配，则允许该请求访问
+		- 域名及url的字符串，可前缀后缀带*通配符
+		- 正则表达式
+	- invalid_referer变量：允许访问时变量值为空，不允许时变量值为1
+	- referer_hash_bucket_size: 64
+	- referer_hash_max_size: 2048
+
+## 防盗链的一种解决方案secure_link
+- 原理
+	- 服务器生成加密后的安全连接url返回给客户端，客户端使用安全url访问服务端，由服务端secure_link变量判断是否验证通过
+	- 哈希算法是不可逆的
+	- 客户端只能拿到执行过哈希算法的url
+	- 仅生成URL的服务器，验证url是否安全的nginx这两者，才保存执行哈希算法前的原始字符串
+	- 原始字符串通常由以下部分有序组成
+		- 资源位置：防止攻击者访问任何资源
+		- 用户信息
+		- 时间戳
+		- 秘钥，仅服务器端拥有
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzc5MTA2MjMsLTg1MDczMzk2NiwyOD
-g4ODAzNDYsLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQy
-OTMsMTExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMy
-wyMDUwNjM0ODE2LDE3MTI1NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbMTc0MDgxMTI4NywtMTI3NzkxMDYyMywtOD
+UwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3ODg1LDE4ODU1Nzg0
+MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3NzM4LC
+0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml19
 -->
