@@ -478,6 +478,8 @@ Nginx
 ## 原理
 ### 负载均衡
 - 提高服务可用性
+	- 容灾
+	- 可
 - 保证可扩展性
 	- AKF扩展
 		- 水平扩展
@@ -499,7 +501,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MTA4ODUwOCwxNzQwODExMjg3LC0xMj
+eyJoaXN0b3J5IjpbLTM0NDgwMTA4MCwxNzQwODExMjg3LC0xMj
 c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
 ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
 EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
