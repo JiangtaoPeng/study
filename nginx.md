@@ -526,7 +526,8 @@ Nginx
 	- max_conns：server的最大连接数，仅作用于单worker进程
 	- max_fails：在fail_timeout时间内，最大失败次数，超过后，在fail_timeout时间内不会轮询到这台server
 	- fail_timeout：单位为s
-- 对上游服务使用keepalive长连接
+#### 对上游服务使用keepalive长连接
+- 通过复用连接，降低nginx与上游服务器
 
 
 ## 问题
@@ -546,9 +547,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0ODc2MTQ3MCwxNzQwODExMjg3LC0xMj
-c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
-ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
-EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
-NTQzNDkyXX0=
+eyJoaXN0b3J5IjpbMTU0ODg3MDY4MCwxNjQ4NzYxNDcwLDE3ND
+A4MTEyODcsLTEyNzc5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAz
+NDYsLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMT
+ExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUw
+NjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
