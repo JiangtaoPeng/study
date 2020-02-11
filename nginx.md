@@ -458,7 +458,7 @@ Nginx
 	- geoip_region
 	- ...
 
-## 对客户端使用keepalive提升连接效率
+## 对客户端(下游)使用keepalive提升连接效率
 - http协议中的keepalive
 - 下游客户端，上游代理服务器
 - 多个http请求，复用同一个连接
@@ -546,9 +546,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU2OTMwNzA2LDE3NDA4MTEyODcsLTEyNz
-c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
-NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
-A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
-NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbMTY0ODc2MTQ3MCwxNzQwODExMjg3LC0xMj
+c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
+ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
+EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
+NTQzNDkyXX0=
 -->
