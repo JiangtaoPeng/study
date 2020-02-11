@@ -525,7 +525,8 @@ Nginx
 	- weight：服务访问的权重，默认是1，标识server的能力
 	- max_conns：server的最大连接数，仅作用于单worker进程
 	- max_fails：在fail_timeout时间内，最大失败次数，超过后，在fail_timeout时间内不会轮询到这台server
-	- fail_timeout：
+	- fail_timeout：单位为s
+- 对上游服务使用keepalive长连接
 
 
 ## 问题
@@ -545,9 +546,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODczNDE4NTAsMTc0MDgxMTI4NywtMT
-I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
-ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
-0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
-MjU0MzQ5Ml19
+eyJoaXN0b3J5IjpbNjU2OTMwNzA2LDE3NDA4MTEyODcsLTEyNz
+c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
+NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
+A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
+NDM0OTJdfQ==
 -->
