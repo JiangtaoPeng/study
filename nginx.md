@@ -481,7 +481,7 @@ Nginx
 	- 容灾
 	- 扩容
 - 保证可扩展性
-	- AKF扩展
+	- AKF扩展（可以组合使用）
 		- X轴扩展/水平扩展
 			- 扩容成本低
 			- 服务雾状体啊
@@ -493,8 +493,13 @@ Nginx
 			- 利用location path来区分
 			- 成本高
 		- Z轴扩展
-			- 基于用户的信息进行扩展，比如cdn/用户名
+			- 基于用户的信息进行扩展，比如cdn/用户名/用户ip
+			- 基于hash算法
 			- 分离减少数据的流量
+### 反向代理
+- udp -> udp
+- tcp -> tcp
+- http -> memcached/scgi/fast
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -513,7 +518,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzM5NjMzNDksMTc0MDgxMTI4NywtMT
+eyJoaXN0b3J5IjpbLTE2MzcxNTc3OTQsMTc0MDgxMTI4NywtMT
 I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
 ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
 0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
