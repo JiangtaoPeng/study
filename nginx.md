@@ -472,9 +472,15 @@ Nginx
 	- keepalive-timeout:
 
 # 反向代理和负载均衡
+- 反向代理
+- 负载均衡
+- 缓存
+## 原理
+### 负载均衡
+
 
 ## 问题
-- X-Forwarded-For和可新地址proxy什么关系？
+- X-Forwarded-For和realip地址proxy什么关系？
 			
 
 
@@ -490,7 +496,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc3NzAwMTQsMTc0MDgxMTI4NywtMT
+eyJoaXN0b3J5IjpbLTIwOTM3MzM1NjMsMTc0MDgxMTI4NywtMT
 I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
 ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
 0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
