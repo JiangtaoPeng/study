@@ -531,7 +531,7 @@ Nginx
 - ngx_http_upstream_keepalive_module,默认编译进nginx
 - 指令
 	- proxy_http_version 1.1;(1.0不支持keepalive)
-	- proxy_set_header 
+	- proxy_set_header Connection "";
 - 
 
 
@@ -552,9 +552,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODEyNTAxNDAsMTY0ODc2MTQ3MCwxNz
-QwODExMjg3LC0xMjc3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgw
-MzQ2LC04Mzg0MTc4ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLD
-ExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1
-MDYzNDgxNiwxNzEyNTQzNDkyXX0=
+eyJoaXN0b3J5IjpbLTQ3ODE0ODMwMywxNjQ4NzYxNDcwLDE3ND
+A4MTEyODcsLTEyNzc5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAz
+NDYsLTgzODQxNzg4NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMT
+ExNjg0NTIzNiwtMTA2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUw
+NjM0ODE2LDE3MTI1NDM0OTJdfQ==
 -->
