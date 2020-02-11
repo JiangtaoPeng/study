@@ -484,7 +484,7 @@ Nginx
 	- AKF扩展（可以组合使用）
 		- X轴扩展/水平扩展
 			- 扩容成本低
-			- 服务wu状体啊
+			- 服务无状体啊
 			- 基于round-robin/least-connected算法分发请求
 			- 无法解决数据量的问题
 		- Y轴扩展
@@ -497,6 +497,7 @@ Nginx
 			- 基于hash算法
 			- 分离减少数据的流量
 ### 反向代理
+- downstream下游 -> upstream上游
 - udp -> udp
 - tcp -> tcp
 - http -> memcached/scgi/fast
@@ -518,7 +519,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MzE3Mjk5MCwxNzQwODExMjg3LC0xMj
+eyJoaXN0b3J5IjpbLTYzNzAxMTQ3MiwxNzQwODExMjg3LC0xMj
 c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
 ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
 EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
