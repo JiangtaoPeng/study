@@ -512,7 +512,13 @@ Nginx
 ### 反向代理算法
 #### round-robin
 - 指令
-	- 
+	- 指定上游服务地址的upstream指令和server指令 
+		- upstream name {}
+		- server address [parameter]
+		- 指定 一组上游服务器，地址可以是域名/IP/unix socket，可以加端口，端口默认是80
+		- 参数
+			- backup: 只有当
+			- down: server下线，不提供服务
 
 
 ## 问题
@@ -532,9 +538,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5ODEwODc3MywxNzQwODExMjg3LC0xMj
-c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
-ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
-EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
-NTQzNDkyXX0=
+eyJoaXN0b3J5IjpbLTEwNzg1OTM0LDE3NDA4MTEyODcsLTEyNz
+c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
+NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
+A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
+NDM0OTJdfQ==
 -->
