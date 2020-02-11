@@ -529,6 +529,9 @@ Nginx
 #### 对上游服务使用keepalive长连接
 - 通过复用连接，降低nginx与上游服务器建立/关闭连接的消耗，提升吞吐量，降低时延
 - ngx_http_upstream_keepalive_module,默认编译进nginx
+- 指令
+	- proxy_http_version 1.1;(1.0不支持keepalive)
+	- proxy_set_header 
 - 
 
 
@@ -549,7 +552,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTUwMTYwMzcsMTY0ODc2MTQ3MCwxNz
+eyJoaXN0b3J5IjpbLTE5ODEyNTAxNDAsMTY0ODc2MTQ3MCwxNz
 QwODExMjg3LC0xMjc3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgw
 MzQ2LC04Mzg0MTc4ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLD
 ExMTY4NDUyMzYsLTEwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1
