@@ -479,10 +479,14 @@ Nginx
 ### 负载均衡
 - 提高服务可用性
 	- 容灾
-	- 可
+	- 扩容
 - 保证可扩展性
 	- AKF扩展
-		- 水平扩展
+		- X轴扩展/水平扩展：服务无状态
+			- 扩容成本低
+			- 服务雾状体啊
+			- 基于round-robin/least-connected算法分发请求
+			- 
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -501,7 +505,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDgwMTA4MCwxNzQwODExMjg3LC0xMj
+eyJoaXN0b3J5IjpbMTM2MTAwNzg4OSwxNzQwODExMjg3LC0xMj
 c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
 ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
 EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
