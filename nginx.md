@@ -506,8 +506,9 @@ Nginx
 	- http(header/method...) -> memcached/scgi/fastcgi/wsgi/http/websocket
 #### 缓存
 - 时间缓存
-	- 
+	- 用户请求应用服务器，nginx在请求服务后，发给用户并缓存在nginx上，当用户在访问同样的资源，nginx可以之间返回
 - 空间缓存
+	- 访问
 
 
 ## 问题
@@ -527,9 +528,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM0OTMyNjgsMTc0MDgxMTI4NywtMT
-I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
-ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
-0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
-MjU0MzQ5Ml19
+eyJoaXN0b3J5IjpbMzQ1NTkzNzUyLDE3NDA4MTEyODcsLTEyNz
+c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
+NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
+A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
+NDM0OTJdfQ==
 -->
