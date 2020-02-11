@@ -497,13 +497,18 @@ Nginx
 			- 基于hash算法
 			- 分离减少数据的流量
 ### 反向代理
+#### 反向代理
 - downstream下游 -> upstream上游
 - 四层反向代理，没有很多业务特性
 	- udp -> udp
 	- tcp -> tcp
 - 七层反向代理，含有大量的业务信息
-	- http(header/method...) -> memcached/scgi/fastcgi
-#### 反向代理与缓存
+	- http(header/method...) -> memcached/scgi/fastcgi/wsgi/http/websocket
+#### 缓存
+- 时间缓存
+	- 
+- 空间缓存
+
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -522,7 +527,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njk4NzE2NTUsMTc0MDgxMTI4NywtMT
+eyJoaXN0b3J5IjpbLTE4MTM0OTMyNjgsMTc0MDgxMTI4NywtMT
 I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
 ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
 0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
