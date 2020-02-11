@@ -510,15 +510,15 @@ Nginx
 - 空间缓存
 	- 访问后端服务器的时候，nginx预取一些信息
 ### 反向代理算法
-#### round-robin
-- 指令
+- 上游指令
 	- 指定上游服务地址的upstream指令和server指令 
 		- upstream name {}
 		- server address [parameter]
 		- 指定 一组上游服务器，地址可以是域名/IP/unix socket，可以加端口，端口默认是80
 		- 参数
-			- backup: 只有当
+			- backup: 只有当主server不工作的时候才会发送流量到backup机器上
 			- down: server下线，不提供服务
+- round-robins
 
 
 ## 问题
@@ -538,7 +538,7 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzg1OTM0LDE3NDA4MTEyODcsLTEyNz
+eyJoaXN0b3J5IjpbNDMzODcwMDg2LDE3NDA4MTEyODcsLTEyNz
 c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
 NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
 A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
