@@ -389,6 +389,7 @@ Nginx
 	- referer_hash_max_size: 2048
 
 ## 防盗链的一种解决方案secure_link
+- 默认未编译进nginx
 - 原理
 	- 服务器生成加密后的安全连接url返回给客户端，客户端使用安全url访问服务端，由服务端secure_link变量判断是否验证通过
 	- 哈希算法是不可逆的
@@ -399,9 +400,82 @@ Nginx
 		- 用户信息
 		- 时间戳
 		- 秘钥，仅服务器端拥有
+- 指令
+	- secure_link
+	- secure_link_md5
+	- secure_link_secret
+- 变量
+	- secure_link
+		- secure_link指令下，值为""(验证不通过)/0(时间戳过期)/1(通过)
+		- secure_link_secret指令下，访问格式`/prefix/md5/link`，值为""(验证不通过)/link(验证通过)
 
+## 通过映射新变量提供更多的可能性
+### Map模块
+- 默认编译进nginx
+- 配置在server块之外
+- 指令
+	- `map string $var {
+	hostnames;
+	default 0;
+	*.map.tech.cn 1;
+	map.tech.cn.* 2;
+	xxxx 3;
+	yyyy 4;
+	}`
+	- 判断string的值，并将其对应值存储在var变量中 
+- 可以通过include优化可读性
+- 通过volitale禁止缓存
+### split_clients
+- 默认编译进nginx中
+- 百分比的计算
+	- 对于变量的值执行Murmurhash2算法得到32位的整型哈希数值，记为hash
+	- 32位整型数最大 数值2^32-1,记为max
+	- percent = hash/max
+	- 再判断percent落在哪个区域对应哪个数字
+	- 百分比可以精确到小数点后两位
 
+### geo模块
+- 默认编译进nginx
+- 根据客户端ip地址子网掩码，生成新的变量值
+- 指令
+	- geo [$remote_addr] $var {}
+	- 优先最长匹配，匹配较大的子网掩码
 
+### geoip模块
+- 根据变量获得用户的地理位置
+- 默认没有编译进nginx中
+- 利用maxmind数据库
+- 指令
+	- geoip_country file;
+	- geoip_proxy address|CIDR;
+	- geoip_city file
+- 变量
+	- geoip_country_code: CN/US
+	- geoip_country_code3: CHN/USA
+	- geoip_country_name: China
+	- geoip_latitude
+	- geoip_city_contitent_code
+	- geoip_region
+	- ...
+
+## 对客户端使用keepalive提升连接效率
+- http协议中的keepalive
+- 下游客户端，上游代理服务器
+- 多个http请求，复用同一个连接
+- 减少握手次数，减少并发连接数从而减少了内存消耗，降低tcp拥塞控制的影响
+- 协议
+	- Connection头部：close/keepalive
+	- Keep-Alive头部：timeout=n
+- 指令
+	- keepalive-disable
+	- keepalive-requests:一个连接最多有多少个请求，默认是100
+	- keepalive-timeout:
+
+# 反向代理和负载均衡
+
+## 问题
+- X-Forwarded-For和可新地址proxy什么关系？
+			
 
 
 
@@ -416,8 +490,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDgxMTI4NywtMTI3NzkxMDYyMywtOD
-UwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3ODg1LDE4ODU1Nzg0
-MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC0xMDYwODM3NzM4LC
-0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcxMjU0MzQ5Ml19
+eyJoaXN0b3J5IjpbLTE0Mzc3NzAwMTQsMTc0MDgxMTI4NywtMT
+I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
+ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
+0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
+MjU0MzQ5Ml19
 -->
