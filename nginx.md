@@ -518,13 +518,13 @@ Nginx
 		- 参数
 			- backup: 只有当主server不工作的时候才会发送流量到backup机器上
 			- down: server下线，不提供服务
-#### round-robin算法
+#### round-robin算法（hash算法的基础）
 - 加权轮询的方式取去访问上游服务
 - 集成在nginx的upstream框架中
 - 指令
-	- weight
-	- max_conns
-	- max_fails
+	- weight：服务访问的权重，默认是1，标识server的能力
+	- max_conns：server的最大连接数，仅作用于单worker进程
+	- max_fails：在fail_timeout时间内，最大失败ci h
 	- fail_timeout
 
 
@@ -545,9 +545,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjQ5MDcxMCwxNzQwODExMjg3LC0xMj
-c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
-ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
-EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
-NTQzNDkyXX0=
+eyJoaXN0b3J5IjpbNTU3NzU2NTEzLDE3NDA4MTEyODcsLTEyNz
+c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
+NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
+A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
+NDM0OTJdfQ==
 -->
