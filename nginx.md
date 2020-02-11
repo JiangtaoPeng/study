@@ -508,7 +508,11 @@ Nginx
 - 时间缓存
 	- 用户请求应用服务器，nginx在请求服务后，发给用户并缓存在nginx上，当用户在访问同样的资源，nginx可以之间返回
 - 空间缓存
-	- 访问
+	- 访问后端服务器的时候，nginx预取一些信息
+### 反向代理算法
+#### round-robin
+- 指令
+	- 
 
 
 ## 问题
@@ -528,9 +532,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTkzNzUyLDE3NDA4MTEyODcsLTEyNz
-c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
-NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
-A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
-NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbMjA5ODEwODc3MywxNzQwODExMjg3LC0xMj
+c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
+ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
+EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
+NTQzNDkyXX0=
 -->
