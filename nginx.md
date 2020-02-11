@@ -477,7 +477,10 @@ Nginx
 - 缓存
 ## 原理
 ### 负载均衡
-
+- 提高服务可用性
+- 保证可扩展性
+	- AKF扩展
+		- 水平扩展
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -496,9 +499,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM3MzM1NjMsMTc0MDgxMTI4NywtMT
-I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
-ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
-0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
-MjU0MzQ5Ml19
+eyJoaXN0b3J5IjpbMTQ1MTA4ODUwOCwxNzQwODExMjg3LC0xMj
+c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
+ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
+EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
+NTQzNDkyXX0=
 -->
