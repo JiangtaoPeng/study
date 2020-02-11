@@ -498,9 +498,11 @@ Nginx
 			- 分离减少数据的流量
 ### 反向代理
 - downstream下游 -> upstream上游
-- udp -> udp
-- tcp -> tcp
-- http -> memcached/scgi/fast
+- 四层反向代理
+	- udp -> udp
+	- tcp -> tcp
+- 七层反向代理
+	- http -> memcached/scgi/fast
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -519,9 +521,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzAxMTQ3MiwxNzQwODExMjg3LC0xMj
-c3OTEwNjIzLC04NTA3MzM5NjYsMjg4ODgwMzQ2LC04Mzg0MTc4
-ODUsMTg4NTU3ODQxOSwxNjcxNDk0MjkzLDExMTY4NDUyMzYsLT
-EwNjA4Mzc3MzgsLTE3MTEwMjEzMjMsMjA1MDYzNDgxNiwxNzEy
-NTQzNDkyXX0=
+eyJoaXN0b3J5IjpbNjAwNTU0NjAyLDE3NDA4MTEyODcsLTEyNz
+c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
+NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
+A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
+NDM0OTJdfQ==
 -->
