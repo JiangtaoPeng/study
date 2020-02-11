@@ -488,9 +488,13 @@ Nginx
 			- 基于round-robin/least-connected算法分发请求
 			- 无法解决数据量的问题
 		- Y轴扩展
-			- 从功能上区分服务器
-			- 
+			- 从功能上拆分服务器
+			- 通过url分发
+			- 利用location path来区分
+			- 成本高
 		- Z轴扩展
+			- 基于用户的信息进行扩展，比如cdn/用户名
+			- 分离减少数据的流量
 
 ## 问题
 - X-Forwarded-For和realip地址proxy什么关系？
@@ -509,9 +513,9 @@ Nginx
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjYyMDk0ODc1LDE3NDA4MTEyODcsLTEyNz
-c5MTA2MjMsLTg1MDczMzk2NiwyODg4ODAzNDYsLTgzODQxNzg4
-NSwxODg1NTc4NDE5LDE2NzE0OTQyOTMsMTExNjg0NTIzNiwtMT
-A2MDgzNzczOCwtMTcxMTAyMTMyMywyMDUwNjM0ODE2LDE3MTI1
-NDM0OTJdfQ==
+eyJoaXN0b3J5IjpbLTE1NzM5NjMzNDksMTc0MDgxMTI4NywtMT
+I3NzkxMDYyMywtODUwNzMzOTY2LDI4ODg4MDM0NiwtODM4NDE3
+ODg1LDE4ODU1Nzg0MTksMTY3MTQ5NDI5MywxMTE2ODQ1MjM2LC
+0xMDYwODM3NzM4LC0xNzExMDIxMzIzLDIwNTA2MzQ4MTYsMTcx
+MjU0MzQ5Ml19
 -->
